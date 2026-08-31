@@ -20,6 +20,5 @@ void loop() {
             digitalWrite(19, LOW);
             Serial.println("LED OFF");
         }
-
     }
 }
