@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/esp32.esp32.esp32/act04-dht11-OLED-1_3.ino.bin'
+elf = 'build/esp32.esp32.esp32/act04-dht11-OLED-1_3.ino.elf'
