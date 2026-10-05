@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Guian Jaundell Manalo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -100.76, "attrs": {} },
+    {
+      "type": "board-ili9341-cap-touch",
+      "id": "lcd2",
+      "top": -210.44,
+      "left": 105.22,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd2:VCC", "esp:3V3", "red", [ "v19.2", "h-48", "v-105.6", "h-192.15" ] ],
+    [ "lcd2:GND", "esp:GND.2", "black", [ "v28.8", "h-67.2", "v-76.8" ] ],
+    [ "lcd2:CS", "esp:5", "orange", [ "v0" ] ],
+    [ "lcd2:D/C", "esp:15", "gold", [ "v0" ] ],
+    [ "lcd2:MOSI", "esp:23", "white", [ "v105.6", "h-115.2", "v-144" ] ],
+    [ "lcd2:SCK", "esp:18", "gray", [ "v115.2", "h-134.4", "v-96" ] ],
+    [ "lcd2:MISO", "esp:19", "purple", [ "v124.8", "h-163.2", "v-105.6" ] ],
+    [ "lcd2:RST", "esp:3V3", "#8f4814", [ "v57.6", "h-144", "v-153.6", "h-134.4", "v48" ] ],
+    [ "lcd2:LED", "esp:3V3", "green", [ "v67.2", "h-192", "v-172.8", "h-134.4", "v57.6" ] ]
+  ],
+  "dependencies": {}
+}
