@@ -42,9 +42,9 @@ void loop() {
     http.addHeader("Content-Type", "application/json");
 
     String payload = "{\"sensor_id\":\"DHT11-001\","
-                     "\"temperature\":" + String(temperature, 1) + ","
-                     "\"humidity\":" + String(humidity, 1) + ","
-                     "\"location\":\"Room A\"}";
+                    "\"temperature\":" + String(temperature, 1) + ","
+                    "\"humidity\":" + String(humidity, 1) + ","
+                    "\"location\":\"Room A\"}";
 
     int httpCode = http.POST(payload);
     Serial.print("POST ");
